@@ -1,5 +1,7 @@
 package com.nam;
 
+import com.nam.crud.Application;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -11,15 +13,11 @@ public class Main {
 
         drawStars(50);
 
-        System.out.println("Please Enter what you want to do...");
+        //System.out.println("Please Enter what you want to do...");
 
-        try {
-            int i = System.in.read();
-        } catch (Exception e){
-            System.err.println("Error!");
-            e.printStackTrace();
-        }
+        Application app = Application.getInstance();
 
+        app.run();
 
     }
 
