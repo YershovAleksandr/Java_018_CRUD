@@ -1,60 +1,62 @@
 package com.nam.crud;
 
-import java.util.List;
-
 public class Student {
-    private String  mName;
-    private String  mLastname;
-    private char    mSex;
-    private int     mCourse;
-    private String  mGroup;
+    private int id;
+    private String name;
+    private char sex;
+    private int course;
+    private String group;
 
     //TODO add Subjects & Grades
-    private List<String>    mSubjects;
-    private List<String>    mGrades;
+    //private List<String>    mSubjects;
+    //private List<String>    mGrades;
 
-    public Student(){
-//        mName =
+    public Student(int id, String name, char sex, int course, String group){
+        this.id = id;
+        this.name = name;
+        this.sex = sex;
+        this.course = course;
+        this.group = group;
+    }
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
     }
 
     public String getName(){
-        return mName;
+        return name;
     }
 
     public void setName(String name){
-        mName = name;
-    }
-
-    public String getLastname(){
-        return mLastname;
-    }
-
-    public void setLastname(String lastname){
-        mLastname = lastname;
+        this.name = name;
     }
 
     public char getSex(){
-        return mSex;
+        return sex;
     }
 
     public void setSex(char sex){
-        mSex = sex;
+        this.sex = sex;
     }
 
     public int getCourse(){
-        return mCourse;
+        return course;
     }
 
     public void setCourse(int course){
-        mCourse = course;
+        this.course = course;
     }
 
     public String getGroup(){
-        return mGroup;
+        return group;
     }
 
     public void setGroup(String group){
-        mGroup = group;
+        this.group = group;
     }
 
     //TODO add methods for Subjects & Grades
