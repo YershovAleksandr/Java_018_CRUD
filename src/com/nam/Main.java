@@ -15,7 +15,7 @@ public class Main {
 
         //System.out.println("Please Enter what you want to do...");
 
-        Application app = Application.getInstance();
+        Application app = new Application();
 
         app.run();
 
