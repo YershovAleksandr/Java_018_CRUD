@@ -8,15 +8,12 @@ public class Main {
 	// write your code here
 
         drawStars(50);
-
         System.out.println("Hello CRUD");
-
         drawStars(50);
 
         //System.out.println("Please Enter what you want to do...");
 
         Application app = new Application();
-
         app.run();
 
     }
